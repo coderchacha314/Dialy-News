@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{article.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="article.urlToImage"></ion-img>
+    <ion-card-content>
+     <!-- <ion-title>{{newsData.title}}</ion-title> -->
+     <p>{{article.description}}</p>
+    </ion-card-content>
+    </ion-card>
+    <ion-button (click)="showAlert()">ShowAlert</ion-button>
+     <p>Latitude:{{lat}}</p>
+     <p>Lonngitude:{{lon}}</p>
+    <ion-button (click)="youArehere()">YouAreHere</ion-button>
+<img src="{{imgURL}}" height="200" width="200">
+    <ion-button (click)="getCamera()">Camera</ion-button>
+    <ion-button (click)="getGallery()">Gallery</ion-button>
+
+</ion-content>

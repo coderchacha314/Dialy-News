@@ -1,5 +1,7 @@
 {
   "name": "Dialy-News",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
